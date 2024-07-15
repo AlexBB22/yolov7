@@ -475,6 +475,7 @@ def plot_skeleton_kpts(im, kpts, steps, orig_shape=None):
 
     for sk_id, sk in enumerate(skeleton):
         r, g, b = pose_limb_color[sk_id]
+        print(sk_id)
         pos1 = (int(kpts[(sk[0]-1)*steps]), int(kpts[(sk[0]-1)*steps+1]))
         pos2 = (int(kpts[(sk[1]-1)*steps]), int(kpts[(sk[1]-1)*steps+1]))
         if steps == 3:
